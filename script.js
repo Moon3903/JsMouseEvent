@@ -11,8 +11,10 @@ cat.addEventListener("touchstart", initialClick, false);
 window.addEventListener("touchend", mouseUp, false);
 
 function move(e) {
-  var newX = e.clientX - 10;
-  var newY = e.clientY - 10;
+  var newX = e.changedTouches[0].screenX;
+  var newY = e.changedTouches[0].screenY;
+
+  console.log(newX);
 
   image.style.left = newX + "px";
   image.style.top = newY + "px";
@@ -20,7 +22,7 @@ function move(e) {
 
 function mouseUp() {
   console.log("masuk");
-  document.removeEventListener("mousemove", move);
+  // document.removeEventListener("mousemove", move);
   document.removeEventListener("touchmove", move, false);
   moving = !moving;
   return;
@@ -35,7 +37,7 @@ function initialClick(e) {
   moving = !moving;
   image = this;
 
-  document.addEventListener("mousemove", move, false);
+  // document.addEventListener("mousemove", move, false);
   document.addEventListener("touchmove", move, false);
   console.log("sii")
 }
