@@ -1,21 +1,38 @@
-#dogPic,
+body {
+  background-color: rgb(103, 0, 117);
+}
+
 #catPic {
-  width: 20px;
-  height: 20px;
   position: absolute;
-  background: red;
-  top: 10px;
-  left: 10px;
+  top: 1080px;
+  left: 13%;
+}
+
+.catImg{
+  width: 1300px;
+  height: 1300px;
 }
 
 #dogPic {
-  background: blue;
-  top: 50px;
-  left: 50px;
+  position: absolute;
+  top: 1080px;
+  left: 70%;
 }
 
-img {
-  max-width: 50px;
+.dogImg{
+  width: 1300px;
+  height: 1300px;
+}
+
+#container{
+  position: absolute;
+  top: 700px;
+  left: 35%;
+}
+
+.containerImg{
+  max-width: 2000px;
+  max-height: 2000px;
 }
 
 .unselectable {
