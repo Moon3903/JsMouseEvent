@@ -3,32 +3,27 @@ body {
 }
 
 .container{
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #halal { 
   cursor:move;
-  height: 150px;
-  padding: 1em;
-  width: 300px;
-  text-align:center;
+  max-width: 25%;
+  /* background-color: red; */
 }
 #kepala { 
   cursor:move;
-  height: 150px;
-  padding: 1em;
-  width: 300px;
-  text-align:center;
+  max-width: 25%;
+  /* background-color: green; */
 }
 #tempat { 
   cursor:move;
-  height: 150px;
-  padding: 1em;
-  width: 300px;
-  text-align:center;
+  max-width: 25%;
+  /* background-color: blue; */
 }
 #clickAction{
   /* background:red; */
@@ -41,16 +36,22 @@ body {
   background:blue;
 } */
 
-.item2 {
-  flex-grow: 2; /* default 0 */
-}
+/* .item2 {
+  flex-grow: 2; 
+} */
 
-.item1 {
-  flex-grow: 1; /* default 0 */
-}
-.imgSize{
-  max-width: 300px;
-}
+/* .item1 {
+  flex-grow: 1;
+} */
+/* .imgSize{
+  object-fit: contain;
+} */
 /* .imgTempatSize{
   max-width: 300px;
 } */
+
+img {
+  width: 100%; 
+  height: auto;
+  object-fit: contain;
+}
