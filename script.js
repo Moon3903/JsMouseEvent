@@ -5,6 +5,12 @@ var moving = false;
 dog.addEventListener("mousedown", initialClick, false);
 cat.addEventListener("mousedown", initialClick, false);
 window.addEventListener("mouseup", mouseUp, false);
+dog.addEventListener("touchstart", initialClick, false);
+dog.addEventListener("touchend", mouseUp, false);
+dog.addEventListener("touchmove", move, false);
+cat.addEventListener("touchstart", initialClick, false);
+cat.addEventListener("touchend", mouseUp, false);
+cat.addEventListener("touchmove", move, false);
 
 function move(e) {
   var newX = e.clientX - 10;
