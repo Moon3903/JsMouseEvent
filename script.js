@@ -2,15 +2,13 @@ var dog = document.getElementById("dogPic");
 var cat = document.getElementById("catPic");
 var moving = false;
 
-dog.addEventListener("mousedown", initialClick, false);
-cat.addEventListener("mousedown", initialClick, false);
-window.addEventListener("mouseup", mouseUp, false);
+// dog.addEventListener("mousedown", initialClick, false);
+// cat.addEventListener("mousedown", initialClick, false);
+// window.addEventListener("mouseup", mouseUp, false);
 dog.addEventListener("touchstart", initialClick, false);
-dog.addEventListener("touchend", mouseUp, false);
-dog.addEventListener("touchmove", move, false);
+window.addEventListener("touchend", mouseUp, false);
 cat.addEventListener("touchstart", initialClick, false);
-cat.addEventListener("touchend", mouseUp, false);
-cat.addEventListener("touchmove", move, false);
+window.addEventListener("touchend", mouseUp, false);
 
 function move(e) {
   var newX = e.clientX - 10;
@@ -23,6 +21,7 @@ function move(e) {
 function mouseUp() {
   console.log("masuk");
   document.removeEventListener("mousemove", move);
+  document.removeEventListener("touchmove", move, false);
   moving = !moving;
   return;
 }
@@ -37,6 +36,7 @@ function initialClick(e) {
   image = this;
 
   document.addEventListener("mousemove", move, false);
+  document.addEventListener("touchmove", move, false);
   console.log("sii")
 }
 
