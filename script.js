@@ -11,8 +11,8 @@ window.addEventListener("touchend", touchUp, false);
 
 function touchMove(e) {
   if (e.changedTouches[0]) {
-    var newX = e.changedTouches[0].clientX - 750;
-    var newY = e.changedTouches[0].clientY - 750;
+    var newX = e.changedTouches[0].clientX - 400;
+    var newY = e.changedTouches[0].clientY - 400;
 
     console.log(newX);
 
@@ -42,8 +42,8 @@ function initialTouch(e) {
 }
 
 function move(e) {
-  var newX = e.clientX - 750;
-  var newY = e.clientY - 750;
+  var newX = e.clientX - 400;
+  var newY = e.clientY - 400;
 
   console.log(newX);
 
