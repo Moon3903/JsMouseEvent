@@ -12,18 +12,27 @@ body {
 
 #halal { 
   cursor:move;
-  max-width: 25%;
+  order: 1;
+  max-width: 20%;
   /* background-color: red; */
 }
 #kepala { 
   cursor:move;
-  max-width: 25%;
+  order: 3;
+  max-width: 20%;
   /* background-color: green; */
 }
 #tempat { 
-  cursor:move;
-  max-width: 25%;
+  /* cursor:move; */
+  margin: 0px 10%;
+  order: 2;
+  max-width: 20%;
   /* background-color: blue; */
+}
+#nopad{
+  /* background-color: red; */
+  margin:0;
+  padding:0;
 }
 #clickAction{
   /* background:red; */
