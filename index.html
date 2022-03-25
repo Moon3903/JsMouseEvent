@@ -1,22 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>
+      jQuery UI Draggable + Touch-Punch + Android + Chrome Mobile= No click
+      events
+    </title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+    /> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="jquery/touch.min.js"></script>
   </head>
   <body>
-    <div class="outer">
-      <div id="dogPic">
-        <img src="img/kepala.png" alt="" class="unselectable dogImg" />
+    <div class="container">
+      <div id="halal" class="ui-widget-content item1">
+        <img src="img/halal.png" alt="" class="imgSize" />
       </div>
-      <div id="catPic">
-        <img src="img/halal.png" alt="" class="unselectable catImg" />
+      <div id="tempat" class="ui-widget-content item2">
+        <img src="img/container.png" alt="" class="imgSize" />
       </div>
-      <div id="container">
-          <img src="img/container.png" alt="" class="unselectable containerImg">
+      <div id="kepala" class="ui-widget-content item1">
+        <img src="img/kepala.png" alt="" class="imgSize" />
       </div>
     </div>
     <script src="script.js"></script>

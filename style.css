@@ -1,50 +1,56 @@
 body {
   background-color: rgb(103, 0, 117);
-  width: 1920px;
-  height: 1080px;
 }
 
-#catPic {
-  height: 100vh;
-  position: absolute;
-  top: 33%;
-  left: 13%;
+.container{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.catImg{
-  max-width: 45%;
+#halal { 
+  cursor:move;
+  height: 150px;
+  padding: 1em;
+  width: 300px;
+  text-align:center;
+}
+#kepala { 
+  cursor:move;
+  height: 150px;
+  padding: 1em;
+  width: 300px;
+  text-align:center;
+}
+#tempat { 
+  cursor:move;
+  height: 150px;
+  padding: 1em;
+  width: 300px;
+  text-align:center;
+}
+#clickAction{
+  /* background:red; */
+  /* border-radius:3px; */
+  /* color:white; */
+  cursor:pointer;
+  /* padding:1em;  */
+}
+/* #clickAction.blue{
+  background:blue;
+} */
+
+.item2 {
+  flex-grow: 2; /* default 0 */
 }
 
-#dogPic {
-  height: 100vh;
-  position: absolute;
-  top: 33%;
-  left: 70%;
+.item1 {
+  flex-grow: 1; /* default 0 */
 }
-
-.dogImg{
-  max-width: 70%;
+.imgSize{
+  max-width: 300px;
 }
-
-#container{
-  height: 100vh;
-  position: absolute;
-  top: 20%;
-  left: 35%;
-}
-
-.containerImg{
-  max-width: 70%;
-}
-
-.unselectable {
-  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
-  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
-  -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
-  -webkit-user-select: none;
-  -ms-user-select: none; /* From IE10 only */
-  user-select: none; /* Not valid CSS yet, as of July 2012 */
-
-  -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
-  user-drag: none;
-}
+/* .imgTempatSize{
+  max-width: 300px;
+} */
